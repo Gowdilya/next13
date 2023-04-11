@@ -88,6 +88,17 @@ export function MobileNav({ open, setOpen, bgColor, textColor }) {
       <ColDiv>
         <NavAnchor
           color={textColor}
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Home
+        </NavAnchor>
+        <NavAnchor
+          color={textColor}
           href="/about"
           onClick={() =>
             setTimeout(() => {
@@ -99,14 +110,25 @@ export function MobileNav({ open, setOpen, bgColor, textColor }) {
         </NavAnchor>
         <NavAnchor
           color={textColor}
-          href="/contact"
+          href="/user/login"
           onClick={() =>
             setTimeout(() => {
               setOpen(!open);
             }, 100)
           }
         >
-          Contact
+          Login
+        </NavAnchor>
+        <NavAnchor
+          color={textColor}
+          href="/user/signup"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Login
         </NavAnchor>
       </ColDiv>
     </NavContainer>

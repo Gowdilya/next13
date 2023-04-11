@@ -133,14 +133,17 @@ export default function Navbar({ style }: NavBarProps) {
           <BottomSpan open={open} color={style.textColor} />
         </HamBurgerButton>
         <TopNav>
-          <NavLink to="/colour" textColor={style.textColor}>
-            COLOUR
-          </NavLink>
-          <NavLink to="/contact" textColor={style.textColor}>
-            CONTACT
+          <NavLink to="/" textColor={style.textColor}>
+            Home
           </NavLink>
           <NavLink to="/about" textColor={style.textColor}>
-            ABOUT
+            About
+          </NavLink>
+          <NavLink to="/user/login" textColor={style.textColor}>
+            Login
+          </NavLink>
+          <NavLink to="/user/signup" textColor={style.textColor}>
+            Sign Up
           </NavLink>
         </TopNav>
       </MenuBar>
